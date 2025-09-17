@@ -1,0 +1,37 @@
+Core Research Questions:
+
+How can LLMs learn to decompose complex goals (win game) into manageable sub-goals (control center, develop pieces)?
+When should the LLM rely on symbolic reasoning vs. learned patterns?
+Can sub-goal structures transfer to other domains beyond chess?
+
+Hierarchical Planning Structure:
+Strategic Level: "Win the game" (Obviously)
+├── Tactical Level: "Control the center", "King safety", "Piece activity"  
+    ├── Operational Level: "Develop knight", "Castle kingside"
+        ├── Move Level: "Nf3", "O-O"
+
+Phase 1
+- Train 3B on basic move prediction (PGN format)
+- Establish chess playing baseline
+- Implement chess engine integration for legal move validation
+
+Phase 2
+- Create training data with hand-crafted sub-goal labels
+- Train model to predict both moves AND current sub-goal
+- Evaluate sub-goal prediction accuracy
+
+Phase 3 
+- Implement multi-level goal decomposition
+- Train model to generate sub-goal sequences
+- Test planning coherence over longer games
+
+Phase 4
+- Add symbolic queries (position evaluation, tactical checks)
+- Train model when to use symbolic vs neural reasoning
+- Measure hybrid performance vs pure approaches
+
+Evaluation Framework:
+Chess strength (ELO estimation)
+Sub-goal completion rates
+Planning horizon effectiveness
+Symbolic tool usage appropriateness
