@@ -207,3 +207,10 @@ marimo/_lsp/
 __marimo__/
 
 pgn_files/
+
+.DS_Store
+
+*.jsonl
+
+
+
