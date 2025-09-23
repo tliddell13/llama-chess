@@ -138,11 +138,6 @@ def main():
     print("\n" + "="*60)
     print("PHASE 1 TEST COMPLETE!")
     print("="*60)
-    print("\nNext steps:")
-    print("1. If this worked, scale up to full training")
-    print("2. Evaluate on chess positions")
-    print("3. Move to Phase 2 (sub-goal labels)")
-
 
 if __name__ == "__main__":
     main()

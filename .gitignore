@@ -212,6 +212,9 @@ chess_data/
 
 chess_adapters/
 
+chess_bot_fused/
+
+
 .DS_Store
 
 *.jsonl
