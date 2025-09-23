@@ -208,6 +208,10 @@ __marimo__/
 
 pgn_files/
 
+chess_data/
+
+chess_adapters/
+
 .DS_Store
 
 *.jsonl
