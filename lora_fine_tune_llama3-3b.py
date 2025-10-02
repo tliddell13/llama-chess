@@ -61,6 +61,7 @@ def train_model():
         "--train",
         "--data", DATA_DIR,
         "--adapter-path", ADAPTER_PATH,
+        "--loss-function", "chess_masked",
         "--iters", "2000",            # Good balance
         "--batch-size", "4",          # Try increasing from 2
         "--num-layers", "16",         # Good (covers most of model)
